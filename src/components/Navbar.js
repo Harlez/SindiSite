@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
 
-import Logo_cut from '../images/Logo-cut.jpg'
+import Logo from '../images/Logo.jpg'
 import './Navbar.css';
 
 function Navbar() {
@@ -31,10 +31,8 @@ function Navbar() {
       <nav className='navbar'>
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            <img src={Logo_cut}/>
+            <img src={Logo}/>
             <div className='Logo-text'>
-            SindiPostos <br/>
-            ceará
             </div>
           </Link>
           <div className='menu-icon' onClick={handleClick}>
@@ -62,16 +60,6 @@ function Navbar() {
                 onClick={closeMobileMenu}
               >
                 Contato
-              </Link>
-            </li>
-
-            <li>
-              <Link
-                to='/sign-up'
-                className='nav-links-mobile'
-                onClick={closeMobileMenu}
-              >
-                ENTRAR
               </Link>
             </li>
           </ul>
