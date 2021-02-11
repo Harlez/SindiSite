@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
 
-import Logo from '../images/Logo.jpg'
+import Logo from '../images/Logo-2.png'
 import './Navbar.css';
 
 function Navbar() {
@@ -32,8 +32,6 @@ function Navbar() {
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
             <img src={Logo}/>
-            <div className='Logo-text'>
-            </div>
           </Link>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
@@ -60,6 +58,15 @@ function Navbar() {
                 onClick={closeMobileMenu}
               >
                 Contato
+              </Link>
+            </li>
+            <li className='nav-item'>
+              <Link
+                to='/sign-up'
+                className='nav-links'
+                onClick={closeMobileMenu}
+              >
+                ENTRAR
               </Link>
             </li>
           </ul>
