@@ -29,14 +29,12 @@ function Footer() {
             <a 
             className="social-instagram"
             href="https://www.instagram.com/sindipostosce/?hl=pt"
-
             >
                 <i class="fab fa-instagram"></i>
             </a>
             <a 
             className="social-facebook"
-            href="https://www.facebook.com/sindipostosce/"
-            
+            href="https://www.facebook.com/sindipostosce/"       
             >
                 <i class="fab fa-facebook"></i>
             </a>
